@@ -1,0 +1,32 @@
+import random
+import time
+print("--Your Omnitrix--\n")
+
+aliens = ["Clomastone", "Diamondhead", "Spidermonkey" ,"Swampfire", "Jetray" , "Humungousaur" , "Spidermonkey"  , "Brainstorm" ,  "Bigchill" , "Goop"  ,"Cannonbolt" , 'Rath' , "Upchuck", "NRG", "Armodrillo" ,"Terraspin", "Ampfibian", "Fourarms", 'Diamondhead ', "Nanomech", "Waybig", "Ripjaws", "Heatblast", "Wildmutt"]
+
+random.shuffle(aliens)
+for i in aliens:
+	time.sleep(0.3)
+	print(i)
+	
+time.sleep(1)
+print("Now vilgax is comming select the any alien to defat vilgax\n")
+	
+alien = None
+while alien not in aliens:
+	x = input("Select the alien: ")
+	alien = x.capitalize()
+	
+
+	
+time.sleep(1)
+randomAliens = random.choice(aliens)
+
+print("Now Vilgax has Arrived\n")
+time.sleep(2)
+print("Now Vigax is comming to kill you\n")
+if alien in randomAliens:
+	print(f"congratulation! your {alien} kick on Vilgax ass you Defeat him")
+	
+else:
+	print(f"Ahh you lose Vilgax kill your {alien} \n if you select  {randomAliens} that might defeat Villgax")
