@@ -13,13 +13,10 @@ while len(aliens) <= 4:
 	if a in aliens:
 		continue
 	else:
-		aliens.append(a)
-	
-
-
-for i in aliens:
-        time.sleep(0.3)
-        print(i)
+                aliens.append(a)
+                time.sleep(0.3)
+                print(a)
+        
         
 
 time.sleep(0.5)
@@ -30,9 +27,6 @@ while alien not in aliens:
         x = input("Select alien: ")
         alien = x.capitalize()
 
-
-
-time.sleep(1)
 randomAliens = random.choice(aliens)
 
 print("Now Vilgax has Arrived\n")
